@@ -126,7 +126,7 @@ services:
 networks:
 
   Plex_Network:
-    driver: overlay
+    driver: bridge
     attachable: true
     internal: true 
 
