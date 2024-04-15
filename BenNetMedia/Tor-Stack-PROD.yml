@@ -72,7 +72,7 @@ services:
     - 8003:8989/tcp
 
 #_____________________________________________________________________________________________
-  # Sonarr NZB Manager for Movies
+  # Radarr NZB Manager for Movies
 
   Radarr:
     image: linuxserver/radarr
@@ -261,17 +261,17 @@ volumes:
       o: "addr=192.168.10.120,nolock,soft,rw"
       device: ":/volume1/Docker/PROD/Tor-Stack/muximux_data"
 #-----------------------------------------
-  bennetnas_filebot:
-    driver_opts:
-      type: "nfs"
-      o: "addr=192.168.10.120,nolock,soft,rw"
-      device: ":/volume1/Docker/PROD/Tor-Stack/filebot_data"
-#-----------------------------------------
-  bennetnas_organizr:
-    driver_opts:
-      type: "nfs"
-      o: "addr=192.168.10.120,nolock,soft,rw"
-      device: ":/volume1/Docker/PROD/Tor-Stack/organizr_data"
+#   bennetnas_filebot:
+#     driver_opts:
+#       type: "nfs"
+#       o: "addr=192.168.10.120,nolock,soft,rw"
+#       device: ":/volume1/Docker/PROD/Tor-Stack/filebot_data"
+# #-----------------------------------------
+#   bennetnas_organizr:
+#     driver_opts:
+#       type: "nfs"
+#       o: "addr=192.168.10.120,nolock,soft,rw"
+#       device: ":/volume1/Docker/PROD/Tor-Stack/organizr_data"
 
 #-----------------------------------------------------------------------------------------------  
   
