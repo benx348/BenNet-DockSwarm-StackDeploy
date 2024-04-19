@@ -126,7 +126,7 @@ services:
 networks:
 
   Plex_Network:
-    driver: bridge
+    driver: host
     attachable: true
     internal: true 
 
